@@ -20,7 +20,7 @@
 
   <properties>
     <java.version>11</java.version>
-
+    <core.version>0.0.1-SNAPSHOT</core.version>
     <!-- Dependencies Properties -->
     <spring-cloud.version>2021.0.2</spring-cloud.version>
 
@@ -40,6 +40,30 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- Core Starter Dependencies -->
+      <dependency>
+        <groupId>es.abelfgdeveloper.core.starter</groupId>
+        <artifactId>core-starter-base</artifactId>
+        <version>${core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>es.abelfgdeveloper.core.starter</groupId>
+        <artifactId>core-starter-rest</artifactId>
+        <version>${core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>es.abelfgdeveloper.core.starter</groupId>
+        <artifactId>core-starter-jpa</artifactId>
+        <version>${core.version}</version>
+      </dependency>
+
+      <!-- Core Starter Dependencies -->
+      <dependency>
+        <groupId>es.abelfgdeveloper.core.library</groupId>
+        <artifactId>core-library-common</artifactId>
+        <version>${core.version}</version>
+      </dependency>
+
       <!-- Spring Cloud Dependencies -->
       <dependency>
         <groupId>org.springframework.cloud</groupId>
